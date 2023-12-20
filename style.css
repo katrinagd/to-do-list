@@ -1,0 +1,107 @@
+body {
+    min-height: 100vh;
+    background-position: center;
+    background-color: black;
+    display: flex;
+    align-content: space-around;
+    justify-content: space-around;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+.overlay {
+    margin-top: 60px;
+    border-radius: 25px;
+    width: 300px;
+    height: 472px;
+    max-width: 100%;
+    padding: 25px;
+    background-color: #161616;
+    box-shadow: 0px 10px 60px #00FF7F;
+    outline: 1px solid #2b9962;
+    border-radius: 10px;
+
+}
+.container {
+    display: flex;
+    justify-content: center;
+}
+h1 {
+    color: #00FF7F;
+    font-weight: 600;
+    font-size: 40px;
+}
+.subtitle {
+    color: #ffffff;
+    font-size: 18px;
+    margin: 17px 0;
+}
+.title, .subtitle {
+    text-align: center;
+    line-height: 1;
+}
+.list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+}
+.field {
+    width: 100%;
+    padding: 11px 25px;
+    background: transparent;
+    border: 1px solid #e3e3e3;
+    line-height: 1;
+    color: #00FF7F;
+}
+.btn {
+    display: block;
+    width: 100%;
+    color: #00FF7F;
+    background-color: transparent;
+    font-weight: 600;
+    font-size: 14px;
+    margin: 0;
+    padding: 14px 13px 12px 13px;
+    border: 0;
+    border: 1px solid #00FF7F;
+    line-height: 1;
+    cursor: pointer;
+    transition: all ease-in-out .3s;
+}
+.btn:hover {
+    transition: all ease-in-out .3s;
+    background-color: #00FF7F;
+    color: #161616;
+    cursor: pointer;
+}
+.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    background: transparent;
+    border: 1px solid #e3e3e3;
+}
+.item {
+    background-color: #e3e3e3;
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    width: 50%;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #2b9962;
+    color: black;
+    padding: 11px 25px;
+}
+.done {
+    background: #00FF7F;
+    color: black;
+    text-decoration: line-through;
+    border: 1px solid #2b9962;
+    transition: all 1s ease;
+}
+
+@media all and (max-width: 500px) {
+    h1 {
+        font-size: 30px;
+    }
+}
